@@ -72,9 +72,9 @@ pipeline {
                     }
                 }
             }
-            stage('Post-Deployment Configurations for API ') {
-                steps {
-                    println "Skipped"
+  //         stage('Post-Deployment Configurations for API ') {
+    //            steps {
+      //              println "Skipped"
 //                dir('edge') {
 //                    println "Post-Deployment Configurations for API Products Configurations, App Developer and App Configuration "
 //                    bat "mvn -Papigee -Denv=${params.apigee_env} -Dorg=${params.apigee_org} " +
