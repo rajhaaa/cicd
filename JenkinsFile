@@ -16,7 +16,7 @@ pipeline {
             }
         }
         
-        stage('Pre-Deployment Configuration ') {
+    /*    stage('Pre-Deployment Configuration ') {
             steps {
                 dir('edge') {
 
@@ -51,6 +51,7 @@ pipeline {
                 }
             }
         }
+        */
             stage('Build proxy bundle') {
                 steps {
                     dir('edge') {
