@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ProxyEndpoint name="default">
+    <Description/>
+    <FaultRules>
+        <FaultRule name="spikeArrest">
+            <Step>
+                <Name>AM-spikeArrest</Name>
+                <Condition>fault.name Matches "SpikeArrestViolation"</Condition>
+            </Step>
+        </FaultRule>
+    </FaultRules>
+    <PreFlow name="PreFlow">
+        <Request>
+            <Step>
+                <Name>SpikeArrest</Name>
+            </Step>
+            <Step>
+                <Name>VerifyAPIKey</Name>
+            </Step>
+            <Step>
+                <Name>JavaScript-1</Name>
+            </Step>
+            <Step>
+                <Name>QuotaPolicy</Name>
+            </Step>
+        </Request>
+        <Response/>
+    </PreFlow>
+    <PostFlow name="PostFlow">
+        <Request/>
+        <Response/>
+    </PostFlow>
+    <Flows>
+        <Flow name="GetProducts">
+            <Description/>
+            <Request/>
+            <Response/>
+            <Condition>(proxy.pathsuffix MatchesPath "/products") and (request.verb = "GET")</Condition>
+        </Flow>
+        <Flow name="UpdateProducts">
+            <Description/>
+            <Request>
+                <Step>
+                    <Name>KeyValueMap</Name>
+                </Step>
+                <Step>
+                    <Name>BasicAuthentication</Name>
+                </Step>
+                <Step>
+                    <Name>JSONThreatProtection</Name>
+                </Step>
+            </Request>
+            <Response/>
+            <Condition>(proxy.pathsuffix MatchesPath "/products") and (request.verb = "PUT")</Condition>
+        </Flow>
+        <Flow name="CreateProduct">
+            <Description/>
+            <Request>
+                <Step>
+                    <Name>JSONThreatProtection</Name>
+                </Step>
+            </Request>
+            <Response/>
+            <Condition>(proxy.pathsuffix MatchesPath "/products") and (request.verb = "POST")</Condition>
+        </Flow>
+        <Flow name="DeleteProduct">
+            <Description/>
+            <Request>
+                <Step>
+                    <Name>KeyValueMap</Name>
+                </Step>
+                <Step>
+                    <Name>BasicAuthentication</Name>
+                </Step>
+            </Request>
+            <Response/>
+            <Condition>(proxy.pathsuffix MatchesPath "/products") and (request.verb = "DELETE")</Condition>
+        </Flow>
+    </Flows>
+    <HTTPProxyConnection>
+        <BasePath>/proxydemo</BasePath>
+        <Properties/>
+        <VirtualHost>default</VirtualHost>
+        <VirtualHost>secure</VirtualHost>
+    </HTTPProxyConnection>
+    <RouteRule name="default">
+        <TargetEndpoint>default</TargetEndpoint>
+    </RouteRule>
+</ProxyEndpoint>

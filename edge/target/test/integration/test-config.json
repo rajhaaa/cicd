@@ -1,0 +1,8 @@
+{
+	"helloWorld": {
+		"domain": "http://kushalj-eval-test.apigee.net:80",
+		"basepath": "/helloWorld/v1",
+		"product":"demo-helloWorld-kushalProduct-test",
+		"app":"demo-helloWorld-kushal-kushalj-eval-test"
+	}
+}

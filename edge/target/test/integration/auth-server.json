@@ -1,0 +1,4 @@
+{
+    "domain": "http://kushalj-eval-test.apigee.net:80",
+    "basepath": "/oauth/client_credential"
+}

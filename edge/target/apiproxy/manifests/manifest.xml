@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Manifest name="manifest">
+    <Policies>
+        <VersionInfo resourceName="AM-spikeArrest" version="SHA-512:a4b0a25c216073a6e1c9d1a7dc29b9153e36c9bc83dc0f0c947a9a0756f1274a29f031698410bc450a7a37adcaf5ba20d7dc8f175ddf986191e39e00738c96cb"/>
+        <VersionInfo resourceName="BasicAuthentication" version="SHA-512:6027475e663ebbd1f0af540555e5cc68bca07907cfa0ef1c68d3c0bfe82843affcd26fe02de09d5842d3f77d16fafa00e155ab92af678dc050879e0b7652a267"/>
+        <VersionInfo resourceName="JSONThreatProtection" version="SHA-512:4b15afb970eda7a781cb53f1e3ebd931839e63f0e22ac92b843c98ae9439292e97e667c099eca6ee2014fae0f87f74d789f161b6892927f0e063b70d6f61a81f"/>
+        <VersionInfo resourceName="JavaScript-1" version="SHA-512:5cf0ea15f602024aa350a8b98704ed506054493363f785aaf99b585236be8038d6382fcd6e43c6b93b4f9f475a8663359305396a9f248d2c49e1a71aa7d90ac1"/>
+        <VersionInfo resourceName="KeyValueMap" version="SHA-512:c495dcc8ae64d8305e98aab13e1fa358e9ba2674cd7db2bacf95f78f932743c9a0a1d266d929331ac4a04918c971613a385459b4e27eb74ec781fea0cb5a6b4d"/>
+        <VersionInfo resourceName="QuotaPolicy" version="SHA-512:6c00d9e303d6a2ee100ee557361924a6661a803e82d9a4d07b7a8b03feae8b01c289ac83594f27b14f9e858f43512c5e668eb7cf3e3299bbe3cf04bc58d04cb2"/>
+        <VersionInfo resourceName="SpikeArrest" version="SHA-512:4c36a63a58d01e2508ff593cc6be4665813b3df3e5228855fe847683b54f792edf05a91d224e0832efc0777cc94047f61a9a2069fe0b396d63228b2faf269e96"/>
+        <VersionInfo resourceName="VerifyAPIKey" version="SHA-512:902d53ff3ae4f7cd9083142a85407fe0ec59f38407867ea340d7bafce99cdfa9eb3f1272a4eea75779459c5ebb67a7b876fcec07a8ccb53c2326c7ac7162070f"/>
+    </Policies>
+    <ProxyEndpoints>
+        <VersionInfo resourceName="default" version="SHA-512:6b626274479f9101dea035e60e73f04f1e713f480a0568e7cb46ef17e2af57fa7bbde0473a6250e744349bfcd12978d1b144f004ec395e5243cfff48770e6600"/>
+    </ProxyEndpoints>
+    <Resources>
+        <VersionInfo resourceName="jsc://JavaScript-1.js" version="SHA-512:f90ddd77e400dfe6a3fcf479b00b1ee29e7015c5bb8cd70f5f15b4886cc339275ff553fc8a053f8ddc7324f45168cffaf81f8c3ac93996f6536eef38e5e40768"/>
+    </Resources>
+    <SharedFlows/>
+    <TargetEndpoints>
+        <VersionInfo resourceName="default" version="SHA-512:87b24f7ac0c4b4f3288a58bbe09285acb22c836bf1f816292ca51792e608d3bb35978f424f4e8daf404f4da394c58bb37a3706ee98ee0e7b6aae7696e4aef822"/>
+    </TargetEndpoints>
+</Manifest>

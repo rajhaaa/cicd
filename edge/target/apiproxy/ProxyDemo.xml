@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="4" name="ProxyDemo">
+    <Basepaths>/proxydemo</Basepaths>
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1537663012518</CreatedAt>
+    <CreatedBy>vjosyula@atu.edu</CreatedBy>
+    <Description></Description>
+    <DisplayName>ProxyDemo</DisplayName>
+    <LastModifiedAt>1537728740271</LastModifiedAt>
+    <LastModifiedBy>vjosyula@atu.edu</LastModifiedBy>
+    <ManifestVersion>SHA-512:5dbd3600f8f02446de289ad6e44a09197e6d5a3f44b7ef8284479b30b138acdef39904263160c9e75dd055eaf2634f2c16a849145a090f5b7fce17c62cef50c5</ManifestVersion>
+    <Policies>
+        <Policy>AM-spikeArrest</Policy>
+        <Policy>BasicAuthentication</Policy>
+        <Policy>JSONThreatProtection</Policy>
+        <Policy>JavaScript-1</Policy>
+        <Policy>KeyValueMap</Policy>
+        <Policy>QuotaPolicy</Policy>
+        <Policy>SpikeArrest</Policy>
+        <Policy>VerifyAPIKey</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources>
+        <Resource>jsc://JavaScript-1.js</Resource>
+    </Resources>
+    <Spec></Spec>
+    <TargetServers/>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+    </TargetEndpoints>
+</APIProxy>

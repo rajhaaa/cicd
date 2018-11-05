@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Quota async="false" continueOnError="false" enabled="true" name="QuotaPolicy">
+    <DisplayName>QuotaPolicy</DisplayName>
+    <Properties/>
+    <Allow>
+        <Class ref="request.header.quotaVariant">
+            <Allow class="Bronze" count="20"/>
+            <Allow class="Gold" count="10"/>
+            <Allow class="Platinum" count="5"/>
+        </Class>
+    </Allow>
+    <Interval ref="request.header.quota_count">30</Interval>
+    <Distributed>true</Distributed>
+    <Synchronous>true</Synchronous>
+    <TimeUnit ref="request.header.quota_timeout">minute</TimeUnit>
+</Quota>
